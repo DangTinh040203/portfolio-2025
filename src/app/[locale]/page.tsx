@@ -33,14 +33,14 @@ export default function HomePage() {
             <div
               className={`
                 bg-background/10 border-primary relative mx-auto mt-10 size-40
-                rounded-full border-2
+                overflow-hidden rounded-full border-2 shadow-xl
                 md:size-52
                 lg:mt-0 lg:h-96 lg:w-full lg:rounded-xl lg:border-none
                 xl:h-[30rem]
               `}
             >
               <Image
-                src={"/portfolio_img.webp"}
+                src={"/1756820353312.png"}
                 alt=""
                 sizes="auto"
                 fill
@@ -145,8 +145,9 @@ export default function HomePage() {
               </motion.p>
               <div
                 className={`
-                  flex-center mt-4 flex flex-col justify-center gap-4 pb-24
-                  md:mt-8 md:flex-row md:gap-7
+                  flex-center mt-4 flex flex-col items-center justify-center
+                  gap-4 pb-4
+                  md:mt-8 md:flex-row md:gap-7 md:pb-32
                   lg:pb-0
                   xl:justify-start
                 `}

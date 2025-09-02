@@ -53,8 +53,8 @@
   --popover-foreground: oklch(0.145 0 0);
   --primary: oklch(0.871 0.2195 148.02);
   --primary-foreground: oklch(0.871 0.2195 148.02);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.2861 0.0015 17.24);
+  --secondary-foreground: oklch(0.2861 0.0015 17.24);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
   --accent: oklch(0.97 0 0);
@@ -87,8 +87,8 @@
   --popover-foreground: oklch(0.985 0 0);
   --primary: oklch(0.8154 0.1622 77.45);
   --primary-foreground: oklch(0.8154 0.1622 77.45);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.2861 0.0015 17.24);
+  --secondary-foreground: oklch(0.2861 0.0015 17.24);
   --muted: oklch(0.269 0 0);
   --muted-foreground: oklch(0.708 0 0);
   --accent: oklch(0.269 0 0);
@@ -123,8 +123,26 @@
   ::-webkit-scrollbar {
     display: none;
   }
+
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+  .absolute-center {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+  }
 }
 
 @utility container {
   @apply mx-auto max-w-7xl px-2 md:px-8;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply scale-50 !text-primary;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  @apply !bg-primary;
+}
+.swiper-pagination-bullet {
+  @apply !bg-secondary;
 }

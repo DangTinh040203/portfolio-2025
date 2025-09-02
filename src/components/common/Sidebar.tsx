@@ -40,8 +40,8 @@ const Sidebar = () => {
   return (
     <ul
       className={`
-        bg-gray fixed bottom-0 left-0 z-50 flex w-full justify-center gap-6 px-4
-        py-3
+        bg-secondary fixed bottom-0 left-0 z-50 flex w-full justify-center gap-6
+        px-4 py-2
         lg:py-auto lg:px-auto lg:top-1/2 lg:right-8 lg:bottom-auto lg:left-auto
         lg:w-auto lg:-translate-y-1/2 lg:flex-col lg:bg-transparent lg:p-0
       `}
@@ -54,9 +54,9 @@ const Sidebar = () => {
                 className={clsx(
                   `
                     flex-center transition-fade relative z-10 flex size-12
-                    items-center justify-center rounded-full text-xl shadow-2xl
-                    transition-all
-                    group-hover:bg-primary group-hover:text-white
+                    items-center justify-center rounded-full text-xl text-white
+                    shadow-2xl transition-all
+                    group-hover:bg-primary
                   `,
                   sidebar.href === pathName
                     ? "bg-primary text-white"
