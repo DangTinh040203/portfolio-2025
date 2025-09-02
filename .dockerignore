@@ -1,0 +1,41 @@
+# Node.js dependencies
+node_modules
+npm-debug.log
+pnpm-debug.log
+yarn-error.log
+
+# Next.js build outputs
+.next
+out
+dist
+
+# Local env files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# System files
+.DS_Store
+*.swp
+*.swo
+*.bak
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Logs
+logs
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# Cache
+.cache
+coverage
+.vscode
+.idea
