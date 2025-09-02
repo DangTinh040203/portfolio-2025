@@ -28,10 +28,11 @@ const LinkButton = ({ href, title, icon: Icon, ...rest }: LinkButtonProps) => {
           <p
             className={`
               outline-primary flex h-full items-center justify-center
-              rounded-full pr-6 pl-16 font-semibold uppercase shadow-2xl
-              outline-2 transition-all duration-300
+              rounded-full pr-6 pl-16 font-semibold uppercase outline-2
+              transition-all duration-300
               group-hover:bg-primary group-hover:pr-16 group-hover:pl-6
               group-hover:text-white
+              lg:shadow-2xl
             `}
           >
             {title}

@@ -18,7 +18,7 @@ export default function HomePage() {
       <div
         className={`
           bg-primary absolute top-0 left-0 z-0 hidden h-[200vh] w-screen
-          translate-x-[-78%] rotate-[-16deg]
+          -translate-x-[78%] -rotate-[16deg]
           xl:block
         `}
       />
@@ -47,7 +47,10 @@ export default function HomePage() {
                 quality={100}
                 priority
                 fetchPriority="high"
-                className="object-cover object-center"
+                className={`
+                  object-cover object-top
+                  lg:object-center
+                `}
               />
             </div>
           </div>

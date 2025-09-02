@@ -60,7 +60,7 @@ const Sidebar = () => {
                   `,
                   sidebar.href === pathName
                     ? "bg-primary text-white"
-                    : "bg-secondary border",
+                    : "bg-secondary",
                 )}
               >
                 <sidebar.icon size={15} />

@@ -6,7 +6,7 @@ import "swiper/css/thumbs";
 
 import clsx from "clsx";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Navigation, Pagination, Thumbs } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import type { Swiper as SwiperClass, SwiperOptions } from "swiper/types";
@@ -64,7 +64,7 @@ const Portfolio = () => {
               key={index}
               className={`
                 bg-secondary group relative aspect-video w-full cursor-pointer
-                overflow-hidden rounded-xl border
+                overflow-hidden rounded-xl border select-none
               `}
             >
               <Dialog
@@ -75,8 +75,7 @@ const Portfolio = () => {
                 <DialogTrigger>
                   <div
                     className={`
-                      absolute top-1/2 left-1/2 z-10 flex size-full
-                      -translate-x-1/2 -translate-y-1/2 cursor-pointer
+                      absolute top-0 left-0 z-10 flex size-full cursor-pointer
                       items-center justify-center bg-black/80 opacity-0
                       transition-all duration-300
                       group-hover:opacity-100
@@ -111,7 +110,7 @@ const Portfolio = () => {
                         className={`
                           text-primary mb-2 border-b-2 pb-2 text-2xl font-bold
                           uppercase
-                          lg:mb-4 lg:border-b-4 lg:text-4xl
+                          lg:mb-4 lg:text-4xl
                         `}
                       >
                         {project.name}
@@ -185,7 +184,7 @@ const Portfolio = () => {
                         className={`
                           text-primary borer-b-2 mb-2 pb-2 text-2xl font-bold
                           uppercase
-                          lg:mb-4 lg:border-b-4 lg:text-4xl
+                          lg:mb-4 lg:text-4xl
                         `}
                       >
                         details
@@ -197,14 +196,7 @@ const Portfolio = () => {
                           lg:space-y-6
                         `}
                       >
-                        <p
-                          className={`
-                            text-sm
-                            md:text-base
-                          `}
-                        >
-                          {project.description}
-                        </p>
+                        <p className={`text-sm`}>{project.description}</p>
 
                         <div className="space-y-2 text-sm">
                           <div className="flex gap-2">
