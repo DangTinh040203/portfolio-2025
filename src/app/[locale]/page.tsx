@@ -2,7 +2,10 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { FaArrowRightLong } from "react-icons/fa6";
 import { TypeAnimation } from "react-type-animation";
+
+import LinkButton from "@/components/common/LinkButton";
 
 export default function HomePage() {
   return (
@@ -140,6 +143,67 @@ export default function HomePage() {
                   problems into effective solutions.
                 </span>
               </motion.p>
+              <div
+                className={`
+                  flex-center mt-4 flex flex-col justify-center gap-4 pb-24
+                  md:mt-8 md:flex-row md:gap-7
+                  lg:pb-0
+                  xl:justify-start
+                `}
+              >
+                <motion.div
+                  whileInView={{
+                    opacity: [0, 1],
+                    x: [-20, 0],
+                    transition: {
+                      delay: 0.5,
+                      duration: 0.5,
+                    },
+                  }}
+                  animate={{
+                    opacity: [0, 1],
+                    x: [-20, 0],
+                    transition: {
+                      delay: 0.5,
+                      duration: 0.5,
+                    },
+                  }}
+                  className={`
+                    hidden
+                    md:block
+                  `}
+                >
+                  <LinkButton
+                    icon={<FaArrowRightLong />}
+                    title="portfolio"
+                    href="/portfolio"
+                  />
+                </motion.div>
+                <motion.div
+                  whileInView={{
+                    opacity: [0, 1],
+                    x: [-20, 0],
+                    transition: {
+                      delay: 0.7,
+                      duration: 0.5,
+                    },
+                  }}
+                  animate={{
+                    opacity: [0, 1],
+                    x: [-20, 0],
+                    transition: {
+                      delay: 0.7,
+                      duration: 0.5,
+                    },
+                  }}
+                >
+                  <LinkButton
+                    icon={<FaArrowRightLong />}
+                    title="about"
+                    href="/about"
+                  />
+                </motion.div>
+              </div>
             </div>
           </div>
         </div>
