@@ -13,6 +13,28 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Setup Node + pnpm
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "pnpm"
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      # Run lint check
+      - name: Run Linter
+        run: pnpm run lint
+
+      # Run Next.js build check
+      - name: Run Build
+        run: pnpm run build
+
+      # Configure AWS credentials
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
