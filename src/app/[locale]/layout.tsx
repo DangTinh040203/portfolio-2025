@@ -5,6 +5,7 @@ import { Poppins } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 
+import Sidebar from "@/components/common/Sidebar";
 import ToggleTheme from "@/components/common/ToggleTheme";
 import { routing } from "@/configs/i18n/routing";
 import { ThemeProvider } from "@/providers/ThemeProvider";
@@ -49,6 +50,7 @@ export default async function RootLayout({
         >
           <NextIntlClientProvider>
             <ToggleTheme />
+            <Sidebar />
             {children}
           </NextIntlClientProvider>
         </ThemeProvider>

@@ -88,7 +88,7 @@ export default function HomePage() {
                   `}
                 />
                 <br />
-                Web Developer !
+                <span className="text-foreground/80">Web Developer !</span>
               </motion.h1>
               <motion.p
                 whileInView={{
@@ -132,7 +132,7 @@ export default function HomePage() {
                   exciting and innovative projects.
                 </span>
                 <span className="md:hidden">
-                  Hi, I’m Dustin – a full-stack web developer with 3+ years of
+                  Hi, I’m Dustin – a fullstack web developer with 3+ years of
                   experience in Nest.js (backend) & Next.js (frontend). I’ve
                   worked on projects from startups to enterprise apps, always
                   focusing on high-quality, scalable, maintainable code.
