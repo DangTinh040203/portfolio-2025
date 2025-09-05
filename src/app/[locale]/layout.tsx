@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { Toaster } from "sonner";
 
 import Sidebar from "@/components/common/Sidebar";
 import ToggleTheme from "@/components/common/ToggleTheme";
@@ -51,6 +52,7 @@ export default async function RootLayout({
           <NextIntlClientProvider>
             <ToggleTheme />
             <Sidebar />
+            <Toaster richColors />
             {children}
           </NextIntlClientProvider>
         </ThemeProvider>

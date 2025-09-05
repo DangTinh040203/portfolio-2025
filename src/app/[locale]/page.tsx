@@ -40,7 +40,7 @@ export default function HomePage() {
               `}
             >
               <Image
-                src={"/1756820353312.png"}
+                src={"/portfolio_img.webp"}
                 alt=""
                 sizes="auto"
                 fill

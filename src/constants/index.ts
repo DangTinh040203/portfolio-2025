@@ -4,7 +4,7 @@ export const PROJECTS: Array<Project> = [
   {
     name: "my portfolio",
     description:
-      "A comprehensive and interactive showcase of my personal and professional journey, featuring detailed technical skills, programming languages, and work experiences. The portfolio highlights key projects completed during my academic years, outlining my roles, the technologies utilized, and the impact achieved. It also includes a visually engaging gallery, smooth animations, and a responsive design for optimal viewing on any device. The site concludes with accessible contact information, fostering opportunities for networking, collaboration, and career advancement.",
+      "An interactive portfolio showcasing my journey, technical skills, and work experiences. It highlights key academic projects, technologies used, and their impact, complemented by a responsive design with smooth animations, a project gallery, and easy contact options for networking and career growth.",
     createdAt: "Apr 19, 2021",
     role: ["Fullstack Developer"],
     techstack: {
@@ -17,7 +17,7 @@ export const PROJECTS: Array<Project> = [
         "Framer motion",
         "Axios",
       ],
-      more: ["Vercel"],
+      more: ["Ec2", "ECR", "Docker", "Nginx", "PM2"],
     },
     images: [
       "/projects/portfolio/1.png",
@@ -60,7 +60,7 @@ export const PROJECTS: Array<Project> = [
   {
     name: "TBH Network",
     description:
-      "This project focuses on introducing the Web3 ecosystem of The Binary Holdings, providing an overview of its vision and initiatives. The landing page also presents detailed information about the company’s strategic partners as well as its native token, offering visitors a clearer understanding of how The Binary Holdings is building connections, driving innovation, and creating value within the decentralized landscape.",
+      "A landing page introducing The Binary Holdings' Web3 ecosystem, showcasing its vision, strategic partners, and native token—highlighting how the company builds connections, drives innovation, and creates value in the decentralized space.",
     createdAt: "Sep 17, 2021",
     role: ["Fullstack Developer"],
     techstack: {
@@ -117,7 +117,7 @@ export const PROJECTS: Array<Project> = [
   {
     name: "Smart Interview",
     description:
-      "This project is about creating a platform to help users prepare for technical interviews through mock interviews and coding challenges. It leverages OpenAI models to simulate live interview sessions that cover both technical and soft skills, providing a realistic practice environment. In addition, the platform offers a collection of customizable CV templates, enabling users to easily create and refine their own professional resumes.",
+      "A platform for technical interview prep with mock interviews, coding challenges, and AI-simulated sessions covering both technical and soft skills. It also provides customizable CV templates to help users craft professional resumes.",
     createdAt: "Jan 8, 2022",
     role: ["Fullstack Developer"],
     techstack: {
