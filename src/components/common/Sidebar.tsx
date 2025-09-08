@@ -27,11 +27,6 @@ const SIDEBAR_ROUTES: {
     title: "about",
     href: "/about",
   },
-  {
-    icon: IoMailSharp,
-    title: "contact",
-    href: "/contact",
-  },
 ];
 
 const Sidebar = () => {

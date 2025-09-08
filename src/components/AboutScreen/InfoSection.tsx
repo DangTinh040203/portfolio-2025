@@ -35,17 +35,16 @@ const INFOS: IInfo[] = [
 
 const PERSONAL_INFOS = [
   {
+    title: "Phone",
+    value: "0862040542",
+  },
+  {
     title: "First name",
     value: "Tinh",
   },
   {
     title: "Last name",
     value: "Cao Dang",
-  },
-
-  {
-    title: "Phone",
-    value: "0862040542",
   },
   {
     title: "Jobs",

@@ -1,6 +1,7 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
+import { useEffect, useRef, useState } from "react";
+
 import { cn } from "@/lib/utils";
 
 export const MaskContainer = ({
@@ -35,7 +36,7 @@ export const MaskContainer = ({
       }
     };
   }, []);
-  let maskSize = isHovered ? revealSize : size;
+  const maskSize = isHovered ? revealSize : size;
 
   return (
     <motion.div
@@ -49,7 +50,14 @@ export const MaskContainer = ({
       }}
     >
       <motion.div
-        className="absolute flex h-full w-full items-center justify-center bg-black text-6xl [mask-image:url(/mask.svg)] [mask-repeat:no-repeat] [mask-size:40px] dark:bg-white"
+        className={`
+          absolute flex h-full w-full items-center justify-center bg-black
+          text-6xl
+          [mask-image:url(/mask.svg)]
+          [mask-size:40px]
+          [mask-repeat:no-repeat]
+          dark:bg-white
+        `}
         animate={{
           maskPosition: `${mousePosition.x - maskSize / 2}px ${
             mousePosition.y - maskSize / 2
@@ -61,7 +69,12 @@ export const MaskContainer = ({
           maskPosition: { duration: 0.15, ease: "linear" },
         }}
       >
-        <div className="absolute inset-0 z-0 h-full w-full bg-black opacity-50 dark:bg-white" />
+        <div
+          className={`
+            absolute inset-0 z-0 h-full w-full bg-black opacity-50
+            dark:bg-white
+          `}
+        />
         <div
           onMouseEnter={() => {
             setIsHovered(true);
@@ -69,7 +82,9 @@ export const MaskContainer = ({
           onMouseLeave={() => {
             setIsHovered(false);
           }}
-          className="relative z-20 mx-auto max-w-4xl text-center text-4xl font-bold"
+          className={`
+            relative z-20 mx-auto max-w-4xl text-center text-4xl font-bold
+          `}
         >
           {children}
         </div>

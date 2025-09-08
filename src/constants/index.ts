@@ -179,3 +179,43 @@ export const PROJECTS: Array<Project> = [
     demo: "https://cloud.testarchitect.com/",
   },
 ];
+
+export interface Skill {
+  label: string;
+  image: string;
+}
+
+export const SKILLS: Skill[] = [
+  // Programming Languages
+  { image: "/logos/html5-original.svg", label: "HTML5" },
+  { image: "/logos/css3-original.svg", label: "CSS3" },
+  { image: "/logos/javascript-original.svg", label: "JavaScript" },
+  { image: "/logos/typescript-original.svg", label: "TypeScript" },
+  { image: "/logos/java-original.svg", label: "Java" },
+  { image: "/logos/csharp-original.svg", label: "C#" },
+  { image: "/logos/sass-original.svg", label: "Sass" },
+
+  // Frameworks / Libraries
+  { image: "/logos/react-original.svg", label: "React" },
+  { image: "/logos/nextjs-original.svg", label: "Next.js" },
+  { image: "/logos/nestjs-plain.svg", label: "NestJS" },
+  { image: "/logos/spring-original.svg", label: "Spring" },
+  { image: "/logos/tailwindcss-plain.svg", label: "Tailwind CSS" },
+  { image: "/logos/bootstrap-plain.svg", label: "Bootstrap" },
+
+  // Databases
+  { image: "/logos/mysql-original-wordmark.svg", label: "MySQL" },
+  { image: "/logos/mongodb-original-wordmark.svg", label: "MongoDB" },
+  { image: "/logos/elasticsearch.svg", label: "Elasticsearch" },
+
+  // Deployment / Cloud
+  { image: "/logos/docker-plain.svg", label: "Docker" },
+  { image: "/logos/kubernetes-plain.svg", label: "Kubernetes" },
+  { image: "/logos/nginx-original.svg", label: "NGINX" },
+  { image: "/logos/amazonwebservices-original.svg", label: "AWS" },
+  { image: "/logos/firebase-plain.svg", label: "Firebase" },
+
+  // Tools
+  { image: "/logos/nodejs-plain.svg", label: "Node.js" },
+  { image: "/logos/git-plain.svg", label: "Git" },
+];
